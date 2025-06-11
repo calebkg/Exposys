@@ -1,0 +1,35 @@
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="logo">
+      <mat-icon class="logo-icon">account_balance_wallet</mat-icon>
+      <span class="logo-text">Expense Manager</span>
+    </div>
+  </div>
+
+  <nav class="sidebar-nav">
+    <ul class="nav-list">
+      <li
+        *ngFor="let item of menuItems"
+        class="nav-item"
+        [class.hidden]="!shouldShowMenuItem(item)"
+      >
+        <button
+          mat-button
+          class="nav-link"
+          [class.active]="isActiveRoute(item.route)"
+          (click)="navigateTo(item.route)"
+        >
+          <mat-icon class="nav-icon">{{ item.icon }}</mat-icon>
+          <span class="nav-label">{{ item.label }}</span>
+          <div *ngIf="isActiveRoute(item.route)" class="active-indicator"></div>
+        </button>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="sidebar-footer">
+    <div class="app-version">
+      <span class="version-text">Version 1.0.0</span>
+    </div>
+  </div>
+</div>

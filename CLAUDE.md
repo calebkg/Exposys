@@ -9,7 +9,7 @@ The Fusion Starter is a modern, production-ready template for building full-stac
 - **TypeScript**: Type safety is built-in by default
 - **Vite**: Bundling and development server
 - **Vitest**: For testing
-- **TailwindCSS 3**: For styling
+- **TailwindCSS 3**: For stylingg
 
 ## Routing System
 

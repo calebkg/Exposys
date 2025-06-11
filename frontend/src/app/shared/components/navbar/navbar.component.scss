@@ -1,0 +1,116 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 64px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.theme-toggle {
+  transition: transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+}
+
+.user-menu-trigger {
+  padding: 4px;
+}
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-menu {
+  min-width: 250px;
+}
+
+.user-info {
+  padding: 16px !important;
+  cursor: default !important;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #1f2937;
+}
+
+.dark .user-name {
+  color: #f9fafb;
+}
+
+.user-email {
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+.dark .user-email {
+  color: #9ca3af;
+}
+
+.logout-button {
+  color: #dc2626 !important;
+}
+
+.dark .logout-button {
+  color: #ef4444 !important;
+}
+
+mat-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+mat-menu-item mat-icon {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .navbar-title {
+    font-size: 1.1rem;
+    margin-left: 0.5rem;
+  }
+
+  .navbar-actions {
+    gap: 0.25rem;
+  }
+}
